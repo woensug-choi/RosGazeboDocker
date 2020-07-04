@@ -17,4 +17,5 @@ docker run -it --rm --name=ros_gazebo_desktop -m=4g -p 6080:80 -p 5901:5901 -p 5
 
 # VNC and SSH
 View screen with browser 'http://localhost:6080'
+
 ssh with terminal 'ssh ubuntu@localhost -p 5902'
