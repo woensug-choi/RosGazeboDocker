@@ -1,5 +1,5 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc:bionic-lxqt
-LABEL maintainer "jbnunn@gmail.com"
+LABEL maintainer "woensug.choi@gmail.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 
