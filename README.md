@@ -3,10 +3,13 @@ Ubuntu 18.04 + ROS Melodic + Gazebo 9 + VNC docker file
 
 # Installation
 git clone https://github.com/woensug-choi/ROSGazeboDocker
+
 cd ROSGazeboDocker
+
 docker build -t ros-gazebo-desktop .
 
 mkdir data
+
 cd data
 
 # Run
