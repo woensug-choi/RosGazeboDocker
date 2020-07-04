@@ -13,9 +13,11 @@ mkdir data
 cd data
 
 # Run
-docker run -it --rm --name=ros_gazebo_desktop -m=4g -p 6080:80 -p 5901:5901 -p 5902:22 -v $PWD/data:/home/ubuntu/data -e RESOLUTION=1280x720 -e USER=ubuntu -e PASSWORD=ubuntu ros-gazebo-deskto
+docker run -it --rm --name=ros_gazebo_desktop -m=4g -p 6080:80 -p 5901:5900 -p 5902:22 -v $PWD/data:/home/ubuntu/data:delegated -e RESOLUTION=1280x720 -e USER=ubuntu -e PASSWORD=ubuntu ros-gazebo-deskto
 
 # VNC and SSH
 View screen with browser 'http://localhost:6080'
+
+Use VNC client to connect through localhost:5901
 
 ssh with terminal 'ssh ubuntu@localhost -p 5902'
