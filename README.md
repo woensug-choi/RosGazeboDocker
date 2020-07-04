@@ -10,8 +10,6 @@ docker build -t ros-gazebo-desktop .
 
 mkdir data
 
-cd data
-
 # Run
 docker run -it --rm --name=ros_gazebo_desktop -m=4g -p 6080:80 -p 5901:5900 -p 5902:22 -v $PWD/data:/home/ubuntu/data:delegated -e RESOLUTION=1280x720 -e USER=ubuntu -e PASSWORD=ubuntu ros-gazebo-deskto
 
