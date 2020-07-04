@@ -20,4 +20,6 @@ View screen with browser 'http://localhost:6080'
 
 Use VNC client to connect through localhost:5901
 
-ssh with terminal 'ssh ubuntu@localhost -p 5902'
+To SSH from other host or other machines,
+run 'service ssh start' in server terminal to start ssh server
+run 'ssh ubuntu@localhost -p 5902' from client
