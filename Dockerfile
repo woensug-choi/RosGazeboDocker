@@ -43,10 +43,10 @@ RUN /bin/bash -c "source /home/ubuntu/.bashrc"
 RUN apt-get install -y ros-melodic-catkin python-catkin-tools
 
 # Copy some starter models
-RUN mkdir -p /home/ubuntu/.gazebo/
-COPY models /home/ubuntu/.gazebo/models
+#RUN mkdir -p /home/ubuntu/.gazebo/
+#COPY models /home/ubuntu/.gazebo/models
 
 
 # Setup workshop directory
-RUN mkdir -p ROAST
-COPY lib/curiosity_mars_rover_description ROAST/
+#RUN mkdir -p ROAST
+#COPY lib/curiosity_mars_rover_description ROAST/
