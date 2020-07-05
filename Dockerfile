@@ -2,6 +2,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc:bionic-lxqt
 LABEL maintainer "woensug.choi@gmail.com"
 
 ENV DEBIAN_FRONTEND noninteractive
+ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 
 # Setup your sources list and keys
 RUN apt-get update && apt-get install -q -y \
