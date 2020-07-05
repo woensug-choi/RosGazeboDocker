@@ -20,7 +20,7 @@ if 'sudo systemctl start docker' error, try 'sudo /etc/init.d/docker start'
 
 # Run
 ```
-docker run -it --rm --name=ros_gazebo_desktop -m=4g -p 6080:80 -p 5901:5900 -p 5902:22 -v $PWD/data:/home/ubuntu/data:delegated -e RESOLUTION=1280x720 -e USER=ubuntu -e PASSWORD=ubuntu ros-gazebo-desktop
+sudo docker run -it --rm --name=ros_gazebo_desktop -m=4g -p 6080:80 -p 5901:5900 -p 5902:22 -v $PWD/data:/home/ubuntu/data:delegated -e RESOLUTION=1280x720 -e USER=ubuntu -e PASSWORD=ubuntu ros-gazebo-desktop
 ```
 # VNC and SSH
 View screen with browser 'http://localhost:6080'
