@@ -30,15 +30,6 @@ RUN /bin/bash -c "echo 'source /opt/ros/melodic/setup.bash' >> /root/.bashrc"
 RUN cp /root/.bashrc /home/ubuntu/.bashrc
 RUN /bin/bash -c "source /home/ubuntu/.bashrc"
 
-# Install VS Code and Python extensions
-#RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-#RUN install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-#RUN sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-#RUN apt-get install -y apt-transport-https
-#RUN apt-get update
-#RUN apt-get install -y code
-#RUN pip install pylint
-
 # Install Catkin
 RUN apt-get install -y ros-melodic-catkin python-catkin-tools
 
